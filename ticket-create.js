@@ -2,8 +2,8 @@
 /// Dentro de la carpeta creamos un archivo llamado ticket-create y agregamos
 const Discord = require('discord.js');
 
-const guildTicketCategoryId = '1248977089495830579';
-const moderationRole = '1253090280698282045';
+const guildTicketCategoryId = 'COLOCAR EL ID DE  LA CATEGORIAS DE TICKET!';
+const moderationRole = 'COLOCAR EL ID DEL ROL DE MODERACION';
 
 const ticketCloseButton = new Discord.ActionRowBuilder().addComponents(
     new Discord.ButtonBuilder()
@@ -25,7 +25,7 @@ async function main (interaction) {
     const tickets = guild.channels.cache.filter(channel => channel.parentId === guildTicketCategoryId);
     if(tickets.some(ticket => ticket.topic === user.id)) return interaction.reply({content: 'Tienes un ticket abierto!.', ephemeral: true})
 
-	const imageUrl = 'https://cdn.discordapp.com/attachments/1123808888525955133/1139187326115909683/35B26FBA-A5E9-463A-94D8-4B1BE7A05DCE-2.jpg'
+	const imageUrl = ''
 
     const embed = {
         title: 'Ticket System',
