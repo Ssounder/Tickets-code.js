@@ -17,7 +17,7 @@ const posChannel = guild.channels.cache.find(c =>
         returnBuffer: false,
         filename: `ticket-${posChannel}.html`,
       });
-      const e = interaction.guild.channels.cache.get("1252520861462958155")
+      const e = interaction.guild.channels.cache.get("ID DEL CANAL DE TRANSCRIPTS")
       const transcriptEmbed = new EmbedBuilder()
       .setAuthor({ name: `${interaction.guild.name}'s Transcript`, iconURL: guild.iconURL() })
       .addFields(
